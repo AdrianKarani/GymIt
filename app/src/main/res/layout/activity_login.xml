@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="16dp">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splash_background"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/chandaranagreen"
+        style="@style/TextAppearance.MaterialComponents.Button"
+        android:textAlignment="center"
+        android:textSize="24sp"
+ />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:drawableStart="@drawable/ic_person_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.button.MaterialButton
+        style="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/chandaranagreen"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/buttonLogin"/>
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/chandaranagreen"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Don't have an account ? Sign Up"
+        android:clickable="true"
+       />
+
+</LinearLayout>
